@@ -32,3 +32,44 @@ export default function PokemonTypeList({ setType }) {
     </select>
   );
 }
+
+/*
+import { useEffect, useState } from "react";
+
+export default function PokemonDisplaySubtypeList({setSubtype}){
+    //let [allSubtypes, setAllSubtypes] = useState([])
+
+    useEffect(() => {
+        const fetchSubtype = () => {
+            fetch("https://api.pokemontcg.io/v1/subtypes")
+                .then(response => response.json)
+                .then(json => console.log(json))
+        }
+        return null;
+        },[])
+
+return (
+    <p>Subtype</p>
+);
+
+}
+ */
+
+/*
+import './App.css';
+import { useState } from 'react';
+import PokemonDisplaySubtypeList from "./components/PokemonSubtypeList";
+function App() {
+    let [selectedSubtype, setSelectedSubtype] = useState("")
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <PokemonDisplaySubtypeList setSubtype = {setSelectedSubtype}/>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+ */

@@ -1,3 +1,4 @@
+/*
 import { useEffect, useState } from "react";
 
 export default function PokemonDisplay({ pokemonUrl }) {
@@ -33,3 +34,4 @@ export default function PokemonDisplay({ pokemonUrl }) {
     </>
   );
 }
+*/

@@ -1,22 +1,31 @@
 import { useState } from 'react';
 import './App.css';
-import PokemonDisplay from './components/PokemonDisplay';
-import PokemonList from './components/PokemonList';
-import PokemonTypeList from './components/PokemonTypeList';
-
+//import PokemonDisplay from './components/PokemonDisplay';
+//import PokemonList from './components/PokemonList';
+//import PokemonTypeList from './components/PokemonTypeList';
+import PokeCardSubtypeList from './components/PokeCardSubtypeList.jsx';
 function App() {
-  let [selectedType, setSelectedType] = useState("");
-  let [selectedPokemonUrl, setSelectedPokemonUrl] = useState(null);
-
+    let [subtypeList,setSubTypeList] = useState([]);
   return (
     <div className="App">
       <header className="App-header">
-        <PokemonDisplay pokemonUrl={selectedPokemonUrl} />
-        <PokemonTypeList setType={setSelectedType} />
-        <PokemonList type={selectedType} setPokemonUrl={setSelectedPokemonUrl} />
+          <PokeCardSubtypeList />
       </header>
     </div>
   );
 }
 
 export default App;
+
+/*
+return (
+    <div className="App">
+      <header className="App-header">
+          <PokemonList />
+        <PokemonDisplay pokemonUrl={selectedPokemonUrl} />
+        <PokemonTypeList setType={setSelectedType} />
+        <PokemonList type={selectedType} setPokemonUrl={setSelectedPokemonUrl} />
+      </header>
+    </div>
+  );
+ */

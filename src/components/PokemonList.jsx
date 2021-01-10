@@ -1,3 +1,4 @@
+/*
 import { useEffect, useState } from "react";
 
 function PokemonListElement({ pokemon = {}, setPokemonUrl }) {
@@ -42,3 +43,4 @@ export default function PokemonList({ type, setPokemonUrl }) {
     </ul>
   );
 }
+*/
