@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* Links inside the navbar */
+.navbar button {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  background-color: #333;
+  outline:none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.card_display{
+  margin: 10px;
+  align-content: center;
+}
+
+.body{
+  margin-top: 2em;
+}
+
+.card_Info tr{
+  float: right;
+}

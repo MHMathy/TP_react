@@ -1,16 +1,29 @@
-import { useState } from 'react';
+import {useState } from 'react';
 import './App.css';
-//import PokemonDisplay from './components/PokemonDisplay';
-//import PokemonList from './components/PokemonList';
-//import PokemonTypeList from './components/PokemonTypeList';
-import PokeCardSubtypeList from './components/PokeCardSubtypeList.jsx';
+
+import PokeCardSupertypeList from './components/PokeCardSupertypeList.jsx';
+import PokeCardSupertypeCardList from './components/PokeCardSupertypeCardList.jsx';
+import PokeCardDisplay from './components/PokeCardDisplay.jsx';
+
 function App() {
-    let [subtypeList,setSubTypeList] = useState([]);
+    let [supertype,setSupertype] = useState([]);
+    let [card, setCard] = useState("");
+    let [elementToDisplay,setElementToDisplay] = useState("SupertypeList")
+
+
+
   return (
     <div className="App">
       <header className="App-header">
-          <PokeCardSubtypeList />
+
+          <PokeCardSupertypeList display={elementToDisplay} setDisplay={setElementToDisplay} setSupertypeChoice={setSupertype}/>
+          <div class="body">
+              <PokeCardDisplay display={elementToDisplay} setDisplay={setElementToDisplay} cardChoice={card}/>
+              <PokeCardSupertypeCardList display={elementToDisplay} setDisplay={setElementToDisplay} supertypeChoice={supertype} setCardChoice={setCard}/>
+
+          </div>
       </header>
+
     </div>
   );
 }
